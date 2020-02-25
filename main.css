@@ -1,0 +1,140 @@
+*{
+    /* outline: 2px dashed green; */
+    margin: 0;
+    padding:0;
+}
+/* @media screen and (max-width: 600px) {
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "q"
+        "h"
+        "e"
+        "b"
+        "f";
+}
+ */
+/* step one - build your grid */
+.container {
+    padding:10%;
+    /* height: 100%; */
+    display: grid;
+    grid-gap: 25px;
+    /* this will be  the same for everyone */
+    grid-template-columns: repeat(12, 1fr);
+    /* this will be customized, based on your grid, use pixels or % */
+    grid-template-rows: auto;
+    /* use letters from step 2 to build the grid */
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "b b b b e e e e e e e e"
+        "b b b b x x x x x x x x"
+        "b b b b a a a a a a a a"
+        "f f f f f f f f f f f f";
+}
+li{
+    font-weight: 500;
+    padding:10px;
+}
+
+.info{
+    font-weight: 300;
+    font-size: 21px;
+}
+body{
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(aboutme-banner.svg);
+    background-repeat: no-repeat;
+    background-position-y: -575px;
+}
+
+ul{
+    list-style: none;
+}
+
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    padding-top:25px;
+    font-size: 1.5em;
+    padding-left:450px;
+    color:white;
+}
+
+h3{
+    padding-top:45px;
+}
+
+h4{
+    font-size: 15px;
+}
+
+/* step three - build a grid that becomes active when the pixels are 800px or less */
+@media screen and (max-width: 800px) {
+
+    .container{
+        display: grid;
+        grid-gap: 15px;
+        /* grid is only one column, keep this way */
+        grid-template-columns: 1fr;
+        /* you can enter values, or auto will adjust the box sizes based on content */
+        grid-template-rows: auto;
+        grid-template-areas:
+        "h"
+        "b"
+        "e"
+        "x"
+        "a"
+        "f";
+    }
+}
+
+/* step 1 - assign each of your sections a letter */
+
+header {
+    grid-area: h;
+    padding-top: 4px;
+    padding-left: 350px;
+    font-family: 'Roboto Slab', sans-serif;
+    color:white;
+}
+
+.education-image {
+    background-image: url(education.svg);
+    background-repeat: no-repeat;
+}
+
+.About-me {
+    grid-area: b;
+    padding-top: 200px;
+    color:white;
+    font-size:20px;
+}
+
+.education {
+    grid-area: e;
+    padding-top: 100px;
+    padding-left:50px;
+}
+
+.experience {
+    grid-area: x;
+    padding-left:50px;
+}
+
+.achievements {
+    grid-area: a;
+    padding-left:50px;
+}
+
+footer{
+    grid-area: f;
+}
