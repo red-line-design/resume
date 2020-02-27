@@ -10,8 +10,8 @@
 	.st4{font-size:450.3079px;}
 </style>
 <g>
-	<polygon class="st0" points="1575.2,13.3 791.1,304.1 1575.2,591.5 10758.8,591.5 10758.8,13.3 	"/>
-	<polygon class="st1" points="662.4,13.3 0,304.1 662.4,591.5 2514,591.5 2514,13.3 	"/>
+	<polygon class="st0" points="1575,13 790.9,303.8 1575,591.2 10758.6,591.2 10758.6,13 	"/>
+	<polygon class="st1" points="662.2,13 -0.2,303.8 662.2,591.2 2513.8,591.2 2513.8,13 	"/>
 </g>
-<text transform="matrix(1 0 0 1 8151.5181 485.4707)" class="st2 st3 st4">Education</text>
+<text transform="matrix(1 0 0 1 7846.3887 433.7076)" class="st2 st3 st4">Experience</text>
 </svg>
