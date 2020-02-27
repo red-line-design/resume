@@ -107,10 +107,10 @@ header {
     color:white;
 }
 
-.education-image {
+/* .education-image {
     background-image: url(education.svg);
     background-repeat: no-repeat;
-}
+} */
 
 .About-me {
     grid-area: b;
