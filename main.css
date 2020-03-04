@@ -33,8 +33,7 @@
         "h h h h h h h h h h h h"
         "b b b b e e e e e e e e"
         "b b b b x x x x x x x x"
-        "b b b b a a a a a a a a"
-        "f f f f f f f f f f f f";
+        "b b b b a a a a a a a a";
 }
 li{
     font-weight: 500;
@@ -48,9 +47,7 @@ li{
 body{
     font-size: 1.5em;
     font-family: 'Roboto', sans-serif;
-    background-image: url(aboutme-banner.svg);
-    background-repeat: no-repeat;
-    background-position-y: -575px;
+    
 }
 
 ul{
@@ -75,6 +72,13 @@ h3{
 
 h4{
     font-size: 15px;
+    padding-left: 15px;
+}
+
+h5{
+    font-size: 60px;
+    padding-left:450px;
+    color:white;
 }
 
 /* step three - build a grid that becomes active when the pixels are 800px or less */
@@ -92,8 +96,7 @@ h4{
         "b"
         "e"
         "x"
-        "a"
-        "f";
+        "a";
     }
 }
 
@@ -102,7 +105,7 @@ h4{
 header {
     grid-area: h;
     padding-top: 4px;
-    padding-left: 350px;
+    padding-left: -100px;
     font-family: 'Roboto Slab', sans-serif;
     color:white;
 }
@@ -114,14 +117,14 @@ header {
 
 .About-me {
     grid-area: b;
-    padding-top: 200px;
+    padding-top: 6px;
     color:white;
     font-size:20px;
 }
 
 .education {
     grid-area: e;
-    padding-top: 100px;
+    padding-top: -250px;
     padding-left:50px;
 }
 
